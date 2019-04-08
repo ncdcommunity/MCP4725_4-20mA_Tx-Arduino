@@ -23,8 +23,8 @@ void loop()
 /// at DAC vlaue 290 the current output will be around 4mA and 
 ///at DAC vlaue 1500 the current output will be around 20mA 
 /// you can change these values to tune the 4-20mA output
- //for (int i=0; i <= 4096; i++)
-  for (int i=290; i <= 1500; i++)
+ //for (int i=0; i <= 4096; i++)  ///////to use this code with 0-10V Hardware
+  for (int i=290; i <= 1500; i++) ///////to use this code with 4-20mA Hardware
   {
   Wire.beginTransmission(address );
   Wire.write(64); 
